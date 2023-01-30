@@ -1,0 +1,20 @@
+#!/usr/local/bin/python3
+import vtt2text
+import re
+from os import path
+import sys
+
+vtt_file_name = sys.argv[1]
+
+if not path.exists(vtt_file_name):
+    print(txt_name + " does not exist")
+    sys.exit(1)
+
+
+txt_name =  re.sub(r'.vtt$', '.txt', vtt_file_name)
+
+if path.exists(txt_name):
+    print(txt_name + " exists")
+    sys.exit(1)
+
+vtt2text.to_file(vtt_file_name, txt_name)

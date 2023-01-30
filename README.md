@@ -1,5 +1,11 @@
 # Recursive Summarizer
 
-## DISCLAIMER: INFORMATIONAL AND EXPERIMENTATION PURPOSES ONLY
+I use this to summarize videos which were transcribed using Whisper. For
+this use-case, I use vtt2txt (included).
 
-Any summarizations made with this code come with no warranty (see MIT license) and should not be used for financial, medical, legal, or any other critical applications.
+Forked from [daveshap/RecursiveSummarizer](https://github.com/daveshap/RecursiveSummarizer). This fork uses less .txt files and takes two arguments for
+input and output.
+
+It also create a grand summary of summaries at the end.
+
+For processing, you can use process_vtt.sh
