@@ -46,7 +46,7 @@ def gpt3_completion(prompt, engine='text-davinci-003', temp=0.2, top_p=1.0, toke
 
 def create_summarization_prompt(text, context=None):
     prompt=list()
-    if context!=None:
+    if context is not None:
         prompt.append("This is a context for the next task:")
         prompt.append("")
         prompt.append("\""+context+"\"")
